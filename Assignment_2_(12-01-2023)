@@ -12,11 +12,11 @@ INSERT INTO PERSON VALUES ('4', 'Manash', 23000, 18)
 
 SELECT * FROM PERSON
 
-                                PID	PNAME	SALARY	AGE
-                                1	Sayan	20000	19
-                                3	Surojit	32000	25
-                                2	Aakash	25000	20
-                                4	Manash	23000	18
+                                PID	PNAME	  SALARY	AGE
+                                1	  Sayan	  20000	  19
+                                3	  Surojit	32000	  25
+                                2	  Aakash	25000	  20
+                                4	  Manash	23000	  18
                                 
 
 
@@ -48,7 +48,7 @@ select * from ORDERS
                             2	        CCTV Camera	    Ichapur	        3
                             1	        LCD Monitor	    Barrackpore	    1
                             3	        LCD Monitor	    Sodepur	        2
-                            4	        Keyboard	    Shyamnagar	    4
+                            4	        Keyboard	      Shyamnagar	    4
 
 
 UPDATE ORDERS SET ORDERS.Pid = '2' WHERE ORDERS.Pid = '4';
@@ -57,7 +57,7 @@ UPDATE ORDERS SET ORDERS.Pid = '2' WHERE ORDERS.Pid = '4';
                             2	        CCTV Camera	    Ichapur	        3
                             1	        LCD Monitor	    Barrackpore	    1
                             3	        LCD Monitor	    Sodepur	        2
-                            4	        Keyboard	    Shyamnagar	    2
+                            4	        Keyboard	      Shyamnagar	    2
 
 
 
@@ -85,7 +85,7 @@ SELECT order_name, COUNT(*) FROM ORDERS GROUP BY order_name
 
                                                 ORDER_NAME	    COUNT(*)
                                                 CCTV Camera	    1
-                                                Keyboard	    1
+                                                Keyboard	      1
                                                 LCD Monitor	    2
 
 
@@ -93,20 +93,20 @@ SELECT order_name, COUNT(*) FROM ORDERS GROUP BY order_name
 
 UPDATE PERSON SET Salary = Salary + Salary * (0.25) WHERE Age > 19;
 
-                                                PID	PNAME	SALARY	AGE
-                                                1	Sayan	20000	19
-                                                3	Surojit	40000	25
-                                                2	Aakash	31250	20
-                                                4	Manash	23000	18
+                                                PID	PNAME	  SALARY	AGE
+                                                1	  Sayan	  20000	  19
+                                                3	  Surojit	40000	  25
+                                                2	  Aakash	31250	  20
+                                                4	  Manash	23000	  18
                                 
 
 -- 5. Display the PERSON details in ascending order by their age.
 
 SELECT * FROM PERSON ORDER BY AGE ASC
 
-                                                PID	PNAME	SALARY	AGE
-                                                4	Manash	23000	18
-                                                1	Sayan	20000	19
-                                                2	Aakash	31250	20
-                                                3	Surojit	40000	25
+                                                PID	PNAME	  SALARY	AGE
+                                                4	  Manash	23000	  18
+                                                1	  Sayan	  20000	  19
+                                                2	  Aakash	31250	  20
+                                                3	  Surojit	40000	  25
 
