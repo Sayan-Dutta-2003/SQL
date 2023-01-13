@@ -13,7 +13,27 @@ SELECT * FROM PERSON
 
 CREATE TABLE ORDERS (
     order_id VARCHAR(10) PRIMARY KEY,
-    order_date DATE,
+    order_name VARCHAR(10),
+    city VARCHAR(20),
     Pid VARCHAR(10),
     FOREIGN KEY (Pid) REFERENCES PERSON(Pid)
 );
+
+select * from ORDERS
+
+ALTER TABLE ORDERS MODIFY order_name VARCHAR2(25);
+
+ALTER TABLE ORDERS MODIFY city VARCHAR2(25);
+
+INSERT INTO ORDERS VALUES ('1', 'LCD Monitor','Barrackpore', '1');
+
+INSERT INTO ORDERS VALUES ('2', 'CCTV Camera','Ichapur', '3');
+
+INSERT INTO ORDERS VALUES ('3', 'LCD Monitor','Sodepur', '2');
+
+INSERT INTO ORDERS VALUES ('4', 'Keyboard','Shyamnagar', '4');
+
+
+-- 1. Display the Person name who orderd the 'LCD Monitor'
+
+SELECT Pname FROM PERSON, ORDERS WHERE order_name = 'LCD Monitor' AND PERSON.Pid = ORDERS.Pid;
