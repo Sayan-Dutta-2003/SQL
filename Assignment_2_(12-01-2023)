@@ -93,20 +93,20 @@ SELECT order_name, COUNT(*) FROM ORDERS GROUP BY order_name
 
 UPDATE PERSON SET Salary = Salary + Salary * (0.25) WHERE Age > 19;
 
-                                                PID	PNAME	  SALARY	AGE
-                                                1	  Sayan	  20000	  19
-                                                3	  Surojit	40000	  25
-                                                2	  Aakash	31250	  20
-                                                4	  Manash	23000	  18
+                                                PID	  PNAME	    SALARY	  AGE
+                                                1	    Sayan	    20000	    19
+                                                3	    Surojit	  40000	    25
+                                                2	    Aakash	  31250	    20
+                                                4	    Manash	  23000	    18
                                 
 
 -- 5. Display the PERSON details in ascending order by their age.
 
 SELECT * FROM PERSON ORDER BY AGE ASC
 
-                                                PID	PNAME	  SALARY	AGE
-                                                4	  Manash	23000	  18
-                                                1	  Sayan	  20000	  19
-                                                2	  Aakash	31250	  20
-                                                3	  Surojit	40000	  25
+                                                PID	  PNAME	    SALARY	  AGE
+                                                4	    Manash	  23000	    18
+                                                1	    Sayan	    20000	    19
+                                                2	    Aakash	  31250	    20
+                                                3	    Surojit	  40000	    25
 
